@@ -1,8 +1,9 @@
 assets/
-scripts/
-styles/
 snaps/*.png
 snaps/**/missingno.*
+snaps/converted/
+original/
+
 
 # Created by https://www.gitignore.io/api/node
 
