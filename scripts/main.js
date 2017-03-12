@@ -9,7 +9,7 @@ var content =
     '<img class="gallery-image previous">' +
     '<img class="gallery-image current">' +
     '<img class="gallery-image next">' +
-    '<img id="close-button" src="//www.photodex.io/cdn/assets/close.png">' +
+    '<img id="close-button" src="cdn/assets/close.png">' +
   '</div>';
 
 $(function () {
