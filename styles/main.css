@@ -127,8 +127,32 @@ body:not(.loading) .hidden-when-loaded {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #C9C9FF;
+  box-sizing: border-box;
   border-radius: 10%;
+}
+
+.entry.gen-i {
+  background-color: #C9C9FF;
+}
+
+.entry.gen-ii {
+  background-color: #BED3FE;
+}
+
+.entry.gen-i.regional {
+  color: #ffdc73
+}
+
+.entry.gen-ii.regional {
+  color: #ffdc73
+}
+
+.entry.gen-i.unobtainable {
+  color: #ff7373
+}
+
+.entry.gen-ii.unobtainable {
+  color: #ff7373
 }
 
 .entry img {
