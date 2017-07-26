@@ -99,7 +99,8 @@ $(function () {
 		  return;
 		}
 
-		var highestSnap = snaps[snaps.length - 1];
+		// var highestSnap = snaps[snaps.length - 1];
+		var highestSnap = 251;
 		for (var i = 1; i <= highestSnap; i++) {
 		  var number = i.toString();
 		  while (number.length < 3) {
