@@ -63,12 +63,15 @@ $(function () {
 
 	  var GEN_II_START = 152;
 	  var UNOBTAINABLE = [
-		144, 145, 146, 150, 151, // Gen I legendaries
+		// 144, 145, 146, // Gen 1 birds now obtainable
+		150, 151, // Gen I legendaries
 		172, 173, 174, 175, 236, 238, 239, 240, // Babies
 		182, 186, 192, 199, 208, 212, 230, 233, // Evolution items
 		196, 197, // Eeveelotuions
 		225, 235, // Unreleased
-		243, 244, 245, 249, 250, 251 // Gen II legendaries
+		243, 244, 245,  // Gen II dogs
+		// 249, 250, // Gen II birds
+		251 // Gen II legendary
 	  ];
 	  var REGIONAL = [
 		83, // Japan
