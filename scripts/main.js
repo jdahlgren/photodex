@@ -61,17 +61,15 @@ $(function () {
 	  var scrollTop;
 	  var scrollDisabled = false;
 
-	  var GEN_II_START = 152;
+		var GEN_II_START = 152;
+		var GEN_III_START = 252;
 	  var UNOBTAINABLE = [
-		// 144, 145, 146, // Gen 1 birds now obtainable
-		150, 151, // Gen I legendaries
+		151, // Mew
 		172, 173, 174, 175, 236, 238, 239, 240, // Babies
 		182, 186, 192, 199, 208, 212, 230, 233, // Evolution items
 		196, 197, // Eeveelotuions
 		225, 235, // Unreleased
-		243, 244, 245,  // Gen II dogs
-		// 249, 250, // Gen II birds
-		251 // Gen II legendary
+		251 // Celebii
 	  ];
 	  var REGIONAL = [
 		83, // Japan
@@ -100,13 +98,23 @@ $(function () {
 		}
 
 		// var highestSnap = snaps[snaps.length - 1];
-		var highestSnap = 251;
+		var highestSnap = 386;
 		for (var i = 1; i <= highestSnap; i++) {
 		  var number = i.toString();
 		  while (number.length < 3) {
 			number = '0' + number;
 		  }
-		  var generationClass = i < GEN_II_START ? 'gen-i' : 'gen-ii';
+			var generationClass;
+			if(i < GEN_II_START) {
+				generationClass = 'gen-i';
+			}
+			else if(i < GEN_III_START) {
+				generationClass = 'gen-ii';
+			}
+			else {
+				generationClass = 'gen-iii';
+			}
+			
 		  var entry = buildEntry(number).addClass(generationClass);
 		  if (UNOBTAINABLE.indexOf(i) !== -1) {
 			entry.addClass('unobtainable');
