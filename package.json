@@ -13,15 +13,13 @@
     "snaps:thumbs": "magick mogrify -path snaps/thumbs -resize \"192x192^\" -gravity center -extent \"192x192\" -quality 90 -format jpg snaps/*.png",
     "snaps:cleanup": "rimraf snaps/**/missingno.*",
     "snaps:jsonlist": "node-ls snaps/thumbs > snaps/snaps.json",
-    "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
-    "lite": "lite-server --port 10001"
+    "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\""
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-ls": "0.0.4",
     "node-static": "^0.7.9",
     "renamer": "^0.6.1",
-    "rimraf": "^2.6.0",
-    "lite-server": "^1.3.1"
+    "rimraf": "^2.6.0"
   }
 }
