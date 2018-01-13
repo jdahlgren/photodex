@@ -155,6 +155,18 @@ body:not(.loading) .hidden-when-loaded {
   color: #ffdc73
 }
 
+.entry.gen-i.oor {
+  color: #ffdc73
+}
+
+.entry.gen-ii.oor {
+  color: #ffdc73
+}
+
+.entry.gen-iii.oor {
+  color: #ffdc73
+}
+
 .entry.gen-i.unobtainable {
   color: #ff7373
 }
@@ -163,7 +175,19 @@ body:not(.loading) .hidden-when-loaded {
   color: #ff7373
 }
 
-.entry.gen-ii.unobtainable {
+.entry.gen-iii.unobtainable {
+  color: #ff7373
+}
+
+.entry.gen-i.unreleased {
+  color: #ff7373
+}
+
+.entry.gen-ii.unreleased {
+  color: #ff7373
+}
+
+.entry.gen-iii.unreleased {
   color: #ff7373
 }
 

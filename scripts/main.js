@@ -64,7 +64,7 @@ $(function () {
 		var GEN_II_START = 152;
 		var GEN_III_START = 252;
 	  var UNOBTAINABLE = [
-		172, 173, 174, 175, 236, 238, 239, 240, 298, 360 // Babies
+		172, 173, 174, 175, 236, 238, 239, 240, 298, 360, // Babies
 		182, 186, 192, 199, 208, 212, 230, 233, // Evolution items
 		196, 197, 350, // Walking req.	
 		254, 257, 260, 266, 267, 268, 269, 272, 282, 289,
@@ -72,13 +72,13 @@ $(function () {
 	  ];
 	  var UNRELEASED = [
 		235, // Smeargle
-		151, 251, 385, 386  // Mythical
-		276, 277, 278, 279, 283, 284, 291, 292, 293, 294,
-		295, 299, 304, 305, 306, 313, 314, 323, 324, 327,
-		328, 329, 330, 331, 332, 333, 334, 337, 338, 343,
-		344, 345, 346, 347, 348, 351, 352, 257, 377, 367,
-		368, 371, 372, 373,	374, 375, 376, 377, 378, 379,
-		380, 381, 384 // Gen 3
+		151, 251, 385, 386,  // Mythical
+		276, 277, 278, 279, 283, 284, 290, 291, 292, 293, 
+		294, 295, 299, 304, 305, 306, 313, 314, 322, 323, 
+		324, 327, 328, 329, 330, 331, 332, 333, 334, 337, 
+		338, 343, 344, 345, 346, 347, 348, 351, 352, 357, 
+		358, 366, 367, 368, 371, 372, 373, 374, 375, 376, 
+		377, 378, 379, 380, 381, 384 // Gen 3
 	  ];
 	  var REGIONAL = [
 		83,  // Farfetch'd - Japan
@@ -140,14 +140,14 @@ $(function () {
 		  if (UNOBTAINABLE.indexOf(i) !== -1) {
 			entry.addClass('unobtainable');
 		  }
-		  if (UNRELEASED.indexOf(i) !== -1) {
-			entry.addClass('unobtainable');
+		  else if (UNRELEASED.indexOf(i) !== -1) {
+			entry.addClass('unreleased');
 		  }
-		  if (REGIONAL.indexOf(i) !== -1) {
+		  else if (REGIONAL.indexOf(i) !== -1) {
 			entry.addClass('regional');
 		  }
-		  if (OUT_OF_ROTATION.indexOf(i) !== -1) {
-			entry.addClass('regional');
+		  else if (OUT_OF_ROTATION.indexOf(i) !== -1) {
+			entry.addClass('oor');
 		  }
 		  $entries.append(entry);
 		}
