@@ -13,7 +13,9 @@
     "snaps:thumbs": "magick mogrify -path snaps/thumbs -resize \"192x192^\" -gravity center -extent \"192x192\" -quality 90 -format jpg snaps/*.png",
     "snaps:cleanup": "rimraf snaps/**/missingno.*",
     "snaps:jsonlist": "node-ls snaps/thumbs > snaps/snaps.json",
-    "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\""
+    "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
+	"createwatermarkpic": "magick convert -size 110x40 -background none -fill white label:\"johdah\" watermark.png",
+	"addwatermark": "magick convert *.png -gravity SouthEast -set filename: '%t' null: ../watermark.png -layers composite %[filename:].png"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
