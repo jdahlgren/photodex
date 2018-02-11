@@ -29,18 +29,8 @@ $(function () {
 
   var keysDown = {};
   var scrollTop;			  
-			
-						
-																					  
-																							 
-			 
-														   
-						
-											
-										   
-										
-													  
-		   
+
+
 
 	$(function () {
 								  
@@ -61,8 +51,8 @@ $(function () {
 	  var scrollTop;
 	  var scrollDisabled = false;
 
-		var GEN_II_START = 152;
-		var GEN_III_START = 252;
+	  var GEN_II_START = 152;
+	  var GEN_III_START = 252;
 	  var UNOBTAINABLE = [
 		172, 173, 174, 175, 236, 238, 239, 240, 298, 360, // Babies
 		182, 186, 192, 199, 208, 212, 230, 233, // Evolution items
@@ -73,12 +63,8 @@ $(function () {
 	  var UNRELEASED = [
 		235, // Smeargle
 		151, 251, 385, 386,  // Mythical
-		276, 277, 278, 279, 283, 284, 290, 291, 292, 293, 
-		294, 295, 299, 304, 305, 306, 313, 314, 322, 323, 
-		324, 327, 328, 329, 330, 331, 332, 333, 334, 337, 
-		338, 343, 344, 345, 346, 347, 348, 351, 352, 357, 
-		358, 366, 367, 368, 371, 372, 373, 374, 375, 376, 
-		377, 378, 379, 380, 381, 384 // Gen 3
+		290, 291, 292, 299, 327, 352, 
+		366, 367, 368, 377, 378, 379, 380, 381// Gen 3
 	  ];
 	  var REGIONAL = [
 		83,  // Farfetch'd - Japan
@@ -87,17 +73,23 @@ $(function () {
 		128, // Tauros - North America
 		214, // Heracross - South America
 		222, // Corsola - 31N-26S Latitude
-		311, // Plusle -
-		312, // Minun -
+		//311, // Plusle -
+		//312, // Minun -
+		324, // Tarkoal - 
+		313, // Volbeat - 
+		314, // Illumise - 
 		335, // Zangoose -
 		336, // Seviper - 
+		337, // Lunatone - 
+		338, // Solrock - 
+		357, // Tropius - 
 		369  // Relicanth - New Zeeland
 		];
 	  var OUT_OF_ROTATION = [
 		144, 145, 146, // Gen 1 Birds
 		243, 244, 245, // Gen 2 Dogs
 		249, 250, // Gen 2 Birds
-		383, // Gen 3 Legends
+		283, 383, // Gen 3 Legends
 		225 // Seasonal
 		];
 
