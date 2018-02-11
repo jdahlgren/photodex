@@ -77,8 +77,8 @@ $(function () {
 		//312, // Minun -
 		324, // Tarkoal - 
 		313, // Volbeat - 
-		314, // Illumise - 
 		335, // Zangoose -
+		314, // Illumise - 
 		336, // Seviper - 
 		337, // Lunatone - 
 		338, // Solrock - 
