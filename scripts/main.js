@@ -62,9 +62,9 @@ $(function () {
 	  ];
 	  var UNRELEASED = [
 		235, // Smeargle
-		151, 251, 385, 386,  // Mythical
-		290, 291, 292, 299, 327, 352, 
-		366, 367, 368, 377, 378, 379, 380, 381// Gen 3
+		251, 385, 386,  // Mythical
+		290, 291, 292, 327, 352, 
+		366, 367, 368, 377, 378, 379 // Gen 3
 	  ];
 	  var REGIONAL = [
 		83,  // Farfetch'd - Japan
@@ -73,12 +73,10 @@ $(function () {
 		128, // Tauros - North America
 		214, // Heracross - South America
 		222, // Corsola - 31N-26S Latitude
-		//311, // Plusle -
-		//312, // Minun -
 		324, // Tarkoal - 
 		313, // Volbeat - 
+		314, // Illumise -
 		335, // Zangoose -
-		314, // Illumise - 
 		336, // Seviper - 
 		337, // Lunatone - 
 		338, // Solrock - 
@@ -89,7 +87,8 @@ $(function () {
 		144, 145, 146, // Gen 1 Birds
 		243, 244, 245, // Gen 2 Dogs
 		249, 250, // Gen 2 Birds
-		283, 383, // Gen 3 Legends
+		382, 383, // Gen 3 Legends
+		380, 381, // Gen 3 birds
 		225 // Seasonal
 		];
 
