@@ -143,28 +143,8 @@ body:not(.loading) .hidden-when-loaded {
     background-color: #b5ccfe;
 }
 
-.entry.gen-i.regional {
-    color: #ffdc73
-}
-
-.entry.gen-ii.regional {
-    color: #ffdc73
-}
-
-.entry.gen-iii.regional {
-    color: #ffdc73
-}
-
-.entry.gen-i.oor {
-    color: #ffdc73
-}
-
-.entry.gen-ii.oor {
-    color: #ffdc73
-}
-
-.entry.gen-iii.oor {
-    color: #ffdc73
+.entry.gen-iiii {
+    background-color: #9cb1fe;
 }
 
 .entry.gen-i.unobtainable {
@@ -179,15 +159,7 @@ body:not(.loading) .hidden-when-loaded {
     color: #ff7373
 }
 
-.entry.gen-i.unreleased {
-    color: #ff7373
-}
-
-.entry.gen-ii.unreleased {
-    color: #ff7373
-}
-
-.entry.gen-iii.unreleased {
+.entry.gen-iiii.unobtainable {
     color: #ff7373
 }
 
